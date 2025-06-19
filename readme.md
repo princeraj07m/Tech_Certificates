@@ -5,6 +5,11 @@
 Welcome to my portfolio! I'm a B.Tech Computer Science Engineering student with a passion for innovation, problem-solving, and building the future through code. From hackathon victories to real-world projects, I constantly push boundaries and explore emerging technologies.
 
 ---
+## 📄 View My Certificates
+
+[![View Certificates](https://img.shields.io/badge/View%20My-Certificates-blue?style=for-the-badge&logo=readthedocs)](https://your-certificates-website-link.com)
+
+---
 
 ## 📈 Quick Stats
 
