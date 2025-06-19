@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  /* Text Effects */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Scale utilities */
+  .scale-102 {
+    transform: scale(1.02);
+  }
+  
+  /* 3D Transform utilities */
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .rotate-x-12 {
+    transform: rotateX(12deg);
+  }
+  
+  .rotate-y-12 {
+    transform: rotateY(12deg);
+  }
+  
+  .translate-z-4 {
+    transform: translateZ(4px);
+  }
+  
+  .translate-z-8 {
+    transform: translateZ(8px);
+  }
+  
+  .translate-z-16 {
+    transform: translateZ(16px);
+  }
+  
+  /* Backface visibility */
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  /* 3D Hover effects */
+  .hover-3d:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+  }
+  
+  /* Glass morphism enhanced */
+  .glass-3d {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .glass-3d-dark {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-blue-500 to-purple-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-blue-600 to-purple-600;
+}
+
+/* Selection styling */
+::selection {
+  @apply bg-blue-500/30 text-blue-900;
+}
+
+::-moz-selection {
+  @apply bg-blue-500/30 text-blue-900;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* 3D Animation keyframes */
+@keyframes float3d {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  33% {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  }
+  66% {
+    transform: translateY(-5px) rotateX(-5deg) rotateY(-5deg);
+  }
+}
+
+@keyframes rotate3d {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  33% {
+    transform: rotateX(10deg) rotateY(10deg) rotateZ(5deg);
+  }
+  66% {
+    transform: rotateX(-10deg) rotateY(-10deg) rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+@keyframes pulse3d {
+  0%, 100% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+/* 3D Animation classes */
+.animate-float3d {
+  animation: float3d 6s ease-in-out infinite;
+}
+
+.animate-rotate3d {
+  animation: rotate3d 8s ease-in-out infinite;
+}
+
+.animate-pulse3d {
+  animation: pulse3d 2s ease-in-out infinite;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .animate-float3d,
+  .animate-rotate3d,
+  .animate-pulse3d {
+    animation: none !important;
+  }
+}
+
+/* Focus styles for accessibility */
+.focus\:ring-custom:focus {
+  @apply ring-2 ring-blue-500/50 ring-offset-2 dark:ring-offset-gray-800;
+}
+
+/* Performance optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* GPU acceleration for smooth animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* 3D Card hover effects */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card-3d:hover {
+  transform: rotateY(10deg) rotateX(10deg) translateZ(20px);
+}
+
+/* Interactive cursor for 3D elements */
+.cursor-3d {
+  cursor: grab;
+}
+
+.cursor-3d:active {
+  cursor: grabbing;
+}
+
+/* Enhanced shadows for 3D depth */
+.shadow-3d {
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24),
+    0 4px 8px rgba(0, 0, 0, 0.12),
+    0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-3d-hover:hover {
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24),
+    0 8px 16px rgba(0, 0, 0, 0.12),
+    0 16px 32px rgba(0, 0, 0, 0.08);
+}
