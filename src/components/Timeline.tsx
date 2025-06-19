@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { achievements } from '../data/portfolioData';
 import { useInView } from 'react-intersection-observer';
 import { Trophy, Briefcase, Award, Star, Sparkles } from 'lucide-react';
 

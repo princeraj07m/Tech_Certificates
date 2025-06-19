@@ -183,49 +183,42 @@ export const certificates: Certificate[] = [
 export const achievements: Achievement[] = [
   {
     id: '1',
-    title: 'Smart India Hackathon Winner',
-    description: 'Won first place among 5000+ teams with an AI-powered traffic management solution',
-    date: 'March 2024',
-    type: 'hackathon',
-    organization: 'Government of India'
+    title: 'IEEE Quiz Finalist',
+    description: 'Blazed through tech trivia and brain-teasers to secure a top spot among the brightest engineering minds.',
+    date: '15 April 2025',
+    type: 'award',
+    organization: 'IEEE'
   },
   {
     id: '2',
-    title: 'Microsoft Internship',
-    description: 'Completed summer internship at Microsoft India, working on Azure DevOps improvements',
-    date: 'August 2023',
-    type: 'internship',
-    organization: 'Microsoft India'
+    title: 'Web Development Certification',
+    description: 'Mastered the modern web — built stunning UIs and powerful APIs from scratch like a true full-stack ninja.',
+    date: '24 - 25 February 2025',
+    type: 'milestone',
+    organization: 'Iliziam - Veltech University'
   },
   {
     id: '3',
-    title: 'Dean\'s List Achievement',
-    description: 'Achieved Dean\'s List for maintaining 9.2+ CGPA for consecutive semesters',
-    date: 'May 2023',
-    type: 'award',
-    organization: 'University'
+    title: 'BITS Goa Hackathon',
+    description: 'Participated among 2000+ teams with a Blockchain-based solution for Certification System',
+    date: 'February 2025',
+    type: 'hackathon',
+    organization: 'BITS Goa'
   },
   {
     id: '4',
-    title: 'HackMIT Best AI Implementation',
-    description: 'Won Best AI Implementation award for creating an intelligent study companion',
-    date: 'September 2023',
-    type: 'hackathon',
-    organization: 'MIT'
+    title: 'Aptimind Winner',
+    description: 'Cracked complex logic puzzles and outperformed 300+ peers in a battle of brains to claim the Aptimind crown.',
+    date: 'January 2025',
+    type: 'award',
+    organization: 'Veltech University, Chennai'
   },
   {
     id: '5',
-    title: 'Open Source Contributor Milestone',
-    description: 'Reached 100+ contributions to open source projects on GitHub',
-    date: 'July 2023',
-    type: 'milestone'
-  },
-  {
-    id: '6',
-    title: 'Tech Lead - College Startup',
-    description: 'Led development team for college startup that reached 1000+ active users',
-    date: 'January 2023',
+    title: 'Code Debugging Champion',
+    description: 'Sliced through spaghetti code and squashed 25+ bugs in record time — crowned the ultimate debugger of the fest.',
+    date: '30 March 2024',
     type: 'milestone',
-    organization: 'CollegeConnect'
+    organization: 'Annual Tech Fest - Veltech University'
   }
 ];
