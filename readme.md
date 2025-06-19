@@ -26,7 +26,7 @@ Welcome to my portfolio! I'm a B.Tech Computer Science Engineering student with 
 
 ### 🚀 Hackathons & Contests
 - **Aptimind Winner** – Veltech University (Jan 2025)  
-  _Outperformed 300+ peers with logic and problem-solving excellence._
+  _Outperformed 1000+ peers with logic and problem-solving excellence._
 
 - **Code Debugging Champion** – Veltech Tech Fest (Mar 2024)  
   _Squashed 25+ bugs in record time across JavaScript and C++._
