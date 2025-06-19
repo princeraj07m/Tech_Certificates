@@ -7,7 +7,7 @@ Welcome to my portfolio! I'm a B.Tech Computer Science Engineering student with 
 ---
 ## 📄 View My Certificates
 
-[![View Certificates](https://img.shields.io/badge/View%20My-Certificates-blue?style=for-the-badge&logo=readthedocs)](https://your-certificates-website-link.com)
+[![View Certificates](https://img.shields.io/badge/View%20My-Certificates-blue?style=for-the-badge&logo=readthedocs)](https://techcertificates.netlify.app/)
 
 ---
 
