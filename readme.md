@@ -34,9 +34,6 @@ Welcome to my portfolio! I'm a B.Tech Computer Science Engineering student with 
 - **Best Blockchain Implementation** – Techxcelerate @ BITS Goa (Feb 2025)  
   _Built and deployed a full-stack dApp using Solidity + React._
 
-- **HackMIT – Best AI Implementation** (Sep 2023)  
-  _Created an intelligent AI-powered study assistant._
-
 - **IEEE Tech Quiz Finalist** – IEEE (Apr 2025)
 
 ### 🌱 Courses & Certifications
@@ -51,6 +48,12 @@ Welcome to my portfolio! I'm a B.Tech Computer Science Engineering student with 
 
 - **Smart Shopping Trolley**  
   _IoT + Python project for intelligent cart tracking._
+
+- **Efiicient irrigation system**  
+  _IoT + Python + ML._
+
+- **Smart Remote Dashboard for Farmers**  
+  _IoT + React + expressJS + SQL._
 
 - **25+ Projects** across domains:
   - MERN Stack Web Apps
